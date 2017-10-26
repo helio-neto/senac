@@ -1,5 +1,9 @@
 package Main;
 
+import java.util.Calendar;
+
+import javax.swing.JOptionPane;
+
 import ExerciciosAula.*;
 import Utils.*;
 
@@ -15,6 +19,9 @@ public class MainExercicios {
 			new Thread(new Exe1("Meu Thread "+i+" - ",ni,i)).start();
 		*/
 		
+		/*
+		 *	Exercicio 2 
+		 
 		Exe2 modelArray = new Exe2();
 		
 		int nt = Console.scanInt("Digite o nº de threads desejado : ");
@@ -22,8 +29,8 @@ public class MainExercicios {
 		modelArray.createArray();
 		modelArray.printArray();
 		modelArray.searchArray(nt, ni);
-		// Exe2.createArray();
-		// Exe2.printArray();
+		*/
+		
 	}
 
 }
