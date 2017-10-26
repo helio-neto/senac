@@ -2,6 +2,7 @@ package Main;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import ExerciciosAula.*;
 
 import ThreadsEdu.*;
 
@@ -32,6 +33,16 @@ public class MainAps2 {
 		for(int i=1; i<11;i++)
             new MeuThread2("Multiplos de "+i,i,i*10).start();
         */
+		
+		/*
+    	 *  Números Pares e Ímpares
+    	 */
+    	EvenNum even = new EvenNum();
+        new Thread(even).start();
+        
+        OddNum odd = new OddNum();
+        new Thread(odd).start();
+        
 	}
 
 }

@@ -15,8 +15,15 @@ public class MainExercicios {
 			new Thread(new Exe1("Meu Thread "+i+" - ",ni,i)).start();
 		*/
 		
-		Exe2.createArray();
-		Exe2.printArray();
+		Exe2 modelArray = new Exe2();
+		
+		int nt = Console.scanInt("Digite o nº de threads desejado : ");
+		int ni = Console.scanInt("Digite o nº a ser procurado : ");
+		modelArray.createArray();
+		modelArray.printArray();
+		modelArray.searchArray(nt, ni);
+		// Exe2.createArray();
+		// Exe2.printArray();
 	}
 
 }
